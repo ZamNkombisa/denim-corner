@@ -1,10 +1,23 @@
-.crum{
+/* Crum Style */
+.crum {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: #5e5e5e;
     font-size: 16px;
     font-weight: 600;
-    margin: 60px 170px;
+    margin: 60px auto;
     text-transform: capitalize;
+    width: fit-content;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .crum {
+        font-size: 14px;
+        margin: 30px auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
